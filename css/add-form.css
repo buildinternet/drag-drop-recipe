@@ -1,0 +1,7 @@
+fieldset{
+	border:none;
+}
+
+label{float:left; width:130px;clear:left;text-align:right; padding-right:15px; font-size:.85em;}
+
+input[type="text"], textarea{border-radius:3px; border:none; font-size:.93em; padding: 3px 5px; outline:none; clear:right; width:300px;}

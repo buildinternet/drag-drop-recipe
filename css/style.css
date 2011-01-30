@@ -1,0 +1,78 @@
+/*
+	Recipe Builder
+	Fall 2010
+	Zach Dunn / One Mighty Roar (onemightyroar.com)
+*/
+
+body{
+	font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+	background: #a3da62;
+	margin:0; padding:0;
+}
+
+#header{
+	background:#252525;
+	display:block; margin-bottom:20px;
+	border-bottom:20px #b4e778 solid;
+}
+
+	#header h1{color:#efefef; margin:0; padding: 15px 20px; font-weight:normal; font-size:1.2em; text-transform:uppercase;}
+
+#wrapper{
+	margin:0 auto;
+	width:960px;
+}
+
+	#ingredients{
+		display:block; clear:both; list-style:none; padding-left:0; 
+	}
+		#ingredients li{
+			display:inline; float:left;
+			width:50px; height:50px;
+			background:#FFF;
+			margin-right:10px;
+		}
+		
+	.dropzone{
+		background:#fff;
+		width:300px;
+		height:300px;
+		-webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2);
+	}
+		.dropzone img{width:280px; height:280px; margin:10px; background:#EFEFEF;}
+		
+		#box1{float:left;}	
+		#box2{float:right;}
+		
+	#result{
+		display:block; clear:both;
+		width:690px; height:250px;
+		margin:30px auto 0 auto;
+	}
+		#result img{float:left; margin-right:10px;}
+		#result .desc{padding:15px 0 0 0;}
+		
+		.desc{}
+			.desc span{font-size:.8em; text-transform:uppercase; color:#70a432; letter-spacing:1px; font-weight:bold;}
+			.desc h2{margin:0; padding-bottom:0; font-size:1.5em;}
+				.desc h2 + p{margin-top:0;}
+			.desc p{color:#526d33; font-size:.8em; line-height:1.4em;}
+#footer{
+	text-align:center;
+	clear:both;
+}
+	#footer p{font-size:.70em;}
+	#footer img{
+		opacity:.6;
+		-webkit-transition:all .5s ease;
+		-moz-transition:all .5s ease;
+		-o-transition:all .5s ease;
+		transition:all .5s ease;
+	}
+		#footer img:hover{opacity:1.0}
+
+/* UI Styles */
+.ui-state-hover{background:#FCCE02;}
+
+/* Helper Classes */
+.clear{clear:both; display:block; width:100%;}
